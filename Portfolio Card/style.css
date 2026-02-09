@@ -24,7 +24,20 @@ body {
     background-color: #fff;
     border-radius: 24px;
     padding: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
 }
 
 .image {
@@ -50,15 +63,86 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.text-date .name{
+
+.text-date .name {
     font-size: 22px;
     font-weight: 500;
-    
+
 }
-.text-date .job{
+
+.text-date .job {
     font-size: 15px;
     font-weight: 400;
-    
+
 }
+
+.media-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.media-buttons .link {
+    background-color: #4070f4;
+    color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-red {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-blue {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-pink {
+    background-color: #e83e8c;
+    color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* DONE ALHAMDUILLAH */
